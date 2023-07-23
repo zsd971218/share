@@ -1,0 +1,119 @@
+@import './normalize.css';
+@import './base.css';
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.fr {
+  display: flex;
+}
+
+.fr-sc {
+  display: flex;
+  align-items: center;
+}
+
+.fc-sc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fc-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.f1 {
+  flex: 1;
+  min-width: 0px;
+  min-height: 0px;
+}
+
+.frw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.frw-ac {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.frw-bc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-bs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fc-as {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fr-ac {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fr-bc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fr-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fc-ac {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fc-bc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fc-cc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 单行文字超出省略号 */
+.elli {
+  min-width: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
