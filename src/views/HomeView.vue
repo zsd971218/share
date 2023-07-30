@@ -14,21 +14,21 @@
           <div class="title">Vomic漫画</div>
           <div class="des">独家、正版、精品的漫画阅读平台</div>
           <ul class="dtype">
-            <li>
+            <li class="fc-cc">
               <img
                 src="https://www.podoteng.com/img/Download_APK.0c9c92a7.png"
                 class="dimg"
               />
               <img src="@/assets/image/qrcode.png" class="code" />
             </li>
-            <li>
+            <li class="fc-cc">
               <img
                 src="https://www.podoteng.com/img/Download_iOS.0f8a3390.png"
                 class="dimg"
               />
               <img src="@/assets/image/qrcode.png" class="code" />
             </li>
-            <li>
+            <li class="fc-cc">
               <img
                 src="https://www.podoteng.com/img/Jump_Miniprogram.7d91a70f.png"
                 class="dimg"
@@ -216,17 +216,6 @@ export default {
       color: #fff;
       margin-top: 20px;
     }
-    .dtype {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      grid-gap: 10px;
-      margin-top: 30px;
-      li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -262,11 +251,23 @@ export default {
     width: 146px;
     height: 58px;
   }
-  .dtype .code {
-    width: 128px;
-    height: 128px;
-    margin-top: 20px;
+  .dtype {
+    display: grid;
+    grid-template-columns: repeat(3, 146px);
+    grid-gap: 10px;
+    margin-top: 30px;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .code {
+      width: 128px;
+      height: 128px;
+      margin-top: 20px;
+    }
   }
+
   .sedimg {
     padding: 150px 50px 0px;
     img {
@@ -405,14 +406,20 @@ export default {
     font-size: 16px;
     line-height: 24px;
   }
-  .dimg {
-    width: 112px;
-    height: 45px;
-  }
-  .dtype .code {
-    width: 80px;
-    height: 80px;
-    margin-top: 20px;
+  .dtype {
+    display: grid;
+    grid-template-columns: repeat(3, 112px);
+    grid-gap: 10px;
+    margin-top: 30px;
+    .dimg {
+      width: 112px;
+      height: 45px;
+    }
+    .code {
+      width: 80px;
+      height: 80px;
+      margin-top: 20px;
+    }
   }
   .top .rbox {
     display: flex;
