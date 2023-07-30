@@ -1,10 +1,10 @@
 :root {
   /* --color-text代表变量 */
-  --color-text: #666;
+  --color-text: #fff;
   --color-text-l: #999;
   --color-text-s: #333;
   --color-text-h: rgb(255, 128, 102);
-  --color-bg: #fff;
+  --color-bg: #000;
   --color-bg-mid: #ededed;
   --font-size: 14px;
 }
@@ -24,11 +24,15 @@ body {
   -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
   color: var(--color-text);
   /* rem vw/vh */
-  width: 100vw;
-  background-color: var(--color-background);
+  width: 100%;
+  background-color: var(--color-bg);
 }
 
 a {
   color: var(--color-text);
   text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
 }
